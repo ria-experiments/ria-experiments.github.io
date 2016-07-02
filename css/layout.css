@@ -52,7 +52,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;
+   padding-bottom: 30px;s
    text-align: center;
 }
 
@@ -66,14 +66,14 @@ header .banner-text h1 {
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #fff;                                 /*A8A8A8*/
+   color: #A8A8A8;
    margin: 0 auto;
    width: 70%;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
-   color: #49e145;
+   color: #fff;
 }
 header .banner-text hr {
    width: 60%;
@@ -109,6 +109,7 @@ header .scrolldown a {
    width: 42px;
    font-size: 42px;
    line-height: 42px;
+   color: #fff;
    border-radius: 100%;
 
    -webkit-transition: all .3s ease-in-out;
@@ -178,7 +179,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #49e145; } /*F06000////////////////////////////////*/
+ul#nav li.current a { color: #F06000; }
 
 
 /* ------------------------------------------------------------------ */
