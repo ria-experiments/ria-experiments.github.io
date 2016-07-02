@@ -81,52 +81,22 @@
 
 		var h = $('header').height();
 		var y = $(window).scrollTop();
-        var nav = $('#nav-wrap');
+      var nav = $('#nav-wrap');
 
-           if ( (y > h*.20) && (y < h) && ($(window).outerWidth() > 768 ) ) {
-               nav.fadeOut('fast');
-           }
-           else {
-               if (y < h*.20) {
-                   nav.removeClass('opaque').fadeIn('fast');
-               }
-               else {
-                   nav.addClass('opaque').fadeIn('fast');
-               }
-           }
+	   if ( (y > h*.20) && (y < h) && ($(window).outerWidth() > 768 ) ) {
+	      nav.fadeOut('fast');
+	   }
+      else {
+         if (y < h*.20) {
+            nav.removeClass('opaque').fadeIn('fast');
+         }
+         else {
+            nav.addClass('opaque').fadeIn('fast');
+         }
+      }
 
 	});
 
-     window.onload = function onLoad() {
-         var circle = new ProgressBar.Circle('#progress', {
-             color: '#11ABB0',
-             duration: 1400,
-             easing: 'easeInOut',
-             strokeWidth: 10,
-             trailColor: '#E8E8E8',
-             trailWidth: 10,
-             svgStyle: null
-         });
-         var circle2 = new ProgressBar.Circle('#progress', {
-             color: '#11ABB0',
-             duration: 1400,
-             easing: 'easeInOut',
-             strokeWidth: 10,
-             trailColor: '#E8E8E8',
-             trailWidth: 10
-         });
-         var circle3 = new ProgressBar.Circle('#progress', {
-             color: '#11ABB0',
-             duration: 1400,
-             easing: 'easeInOut',
-             strokeWidth: 10,
-             trailColor: '#E8E8E8',
-             trailWidth: 10
-         });
-         circle.animate(0.6);
-         circle2.animate(0.3);
-         circle3.animate(0.8);
-     };
 
 /*----------------------------------------------------*/
 /*	Modal Popup
